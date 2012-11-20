@@ -654,12 +654,13 @@ var load_map = function(options) {
             geoserver_url,
             {
                 layers: 'nielsen:' + value.table,
-                styles: value.style, 
-                transparent: true,
-                // tiled: true
+                styles: value.style,
+                transparent: true
+                //tiled: true
             },
             {
                 isBaseLayer: false,
+                gutter: 128,
                 visibility: value.visible
             }
         ));
