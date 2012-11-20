@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nielsen Maps</title>
+
+
+    <link rel="stylesheet" href="site.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js">
+    </script>
+
+    <script src="openlayers/OpenLayers.js">
+    </script>
+
+
+    <script src="main.js"></script>
+
+    <script>
+      $(function () {
+         load_map({map: 'bing-road'});
+      });
+    </script>
+
+  </head>
+  <body>
+    <div id="info"></div>
+    <div>
+      <h1><a href="/"> Nielsen Maps</a></h1>
+      <div id="map"></div>
+    </div>
+
+  </body>
+</html>
