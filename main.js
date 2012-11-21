@@ -656,11 +656,11 @@ var load_map = function(options) {
                 layers: 'nielsen:' + value.table,
                 styles: value.style,
                 transparent: true
-                //tiled: true
+                tiled: true
             },
             {
                 isBaseLayer: false,
-                gutter: 128,
+                // gutter: 128,
                 visibility: value.visible
             }
         ));
