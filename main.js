@@ -3,286 +3,27 @@ var map;
 var mapConfigs = {
 
 
-    'bing-light': [
-
-        {
-            title: 'Census Blocks', 
-            table: 'bgp_clip', 
-            style: 'bing-light-bgp',
-            visible: true
-        },
-
-        {
-            title: 'Census Blocks Labels', 
-            table: 'bgp_point_clip', 
-            style: 'bing-light-bgp-label',
-            visible: true
-        },
-
-        {
-            title: 'Census Tract',
-            table: 'trx_clip',
-            style: 'bing-light-trx',
-            visible: false
-        },
-
-
-        {
-            title: 'Census Tract Labels',
-            table: 'trx_point_clip',
-            style: 'bing-light-trx-label',
-            visible: false
-        },
-
-
-        {
-            title: 'Census Place',
-            table: 'pla_clip',
-            style: 'bing-light-pla',
-            visible: false
-        },
-
-        {
-            title: 'Census Place Label',
-            table: 'pla_clip',
-            style: 'bing-light-pla-label',
-            visible: false
-        },
-
-
-        {
-            title: 'MCD',
-            table: 'mcd_clip',
-            style: 'bing-light-mcd',
-            visible: false
-        },
-
-        {
-            title: 'MCD Label',
-            table: 'mcd_label',
-            style: 'bing-light-mcd-label',
-            visible: false
-        },
-
-
-
-        {
-            title: 'Combined Statistical Area',
-            table: 'csa_clip',
-            style: 'bing-light-csa',
-            visible: false
-        },
-
-
-        {
-            title: 'Zip Code',
-            table: 'zp5_clip',
-            style: 'bing-light-zp5',
-            visible: true
-        },
-
-
-        {
-            title: 'Zip Code Label',
-            table: 'zp5_label',
-            style: 'bing-light-zp5-label',
-            visible: true
-        },
-
-
-        {
-            title: 'County',
-            table: 'cty_clip',
-            style: 'bing-light-cty',
-            visible: true
-        },
-
-
-        {
-            title: 'County Label',
-            table: 'cty_point_clip',
-            style: 'bing-light-cty-label',
-            visible: true
-        },
-
-
-        {
-            title: 'Nielsen Designated Area',
-            table: 'dma_clip',
-            style: 'bing-light-dma',
-            visible: false
-        },
-
-
-        {
-            title: 'Nielsen Designated Area Label',
-            table: 'dma_label',
-            style: 'bing-light-dma-label',
-            visible: false
-        },
-
-
-        {
-            title: 'States',
-            table: 'sta_clip',
-            style: 'bing-light-sta',
-            visible: true
-        },
-
-    
-    ],
-
-
-    'bing-dark': [
-
-        {
-            title: 'Census Blocks', 
-            table: 'bgp_clip', 
-            style: 'bing-dark-bgp',
-            visible: true
-        },
-
-        {
-            title: 'Census Blocks Labels', 
-            table: 'bgp_point_clip', 
-            style: 'bing-dark-bgp-label',
-            visible: true
-        },
-
-        {
-            title: 'Census Tract',
-            table: 'trx_clip',
-            style: 'bing-dark-trx',
-            visible: false
-        },
-
-
-        {
-            title: 'Census Tract Labels',
-            table: 'trx_point_clip',
-            style: 'bing-dark-trx-label',
-            visible: false
-        },
-
-
-        {
-            title: 'Census Place',
-            table: 'pla_clip',
-            style: 'bing-dark-pla',
-            visible: false
-        },
-
-        {
-            title: 'Census Place Label',
-            table: 'pla_clip',
-            style: 'bing-dark-pla-label',
-            visible: false
-        },
-
-
-        {
-            title: 'MCD',
-            table: 'mcd_clip',
-            style: 'bing-dark-mcd',
-            visible: false
-        },
-
-        {
-            title: 'MCD Label',
-            table: 'mcd_label',
-            style: 'bing-dark-mcd-label',
-            visible: false
-        },
-
-
-
-        {
-            title: 'Combined Statistical Area',
-            table: 'csa_clip',
-            style: 'bing-dark-csa',
-            visible: false
-        },
-
-
-        {
-            title: 'Zip Code',
-            table: 'zp5_clip',
-            style: 'bing-dark-zp5',
-            visible: true
-        },
-
-
-        {
-            title: 'Zip Code Label',
-            table: 'zp5_label',
-            style: 'bing-dark-zp5-label',
-            visible: true
-        },
-
-
-        {
-            title: 'County',
-            table: 'cty_clip',
-            style: 'bing-dark-cty',
-            visible: true
-        },
-
-
-        {
-            title: 'County Label',
-            table: 'cty_point_clip',
-            style: 'bing-dark-cty-label',
-            visible: true
-        },
-
-
-        {
-            title: 'Nielsen Designated Area',
-            table: 'dma_clip',
-            style: 'bing-dark-dma',
-            visible: false
-        },
-
-
-        {
-            title: 'Nielsen Designated Area Label',
-            table: 'dma_label',
-            style: 'bing-dark-dma-label',
-            visible: false
-        },
-
-
-        {
-            title: 'States',
-            table: 'sta_clip',
-            style: 'bing-dark-sta',
-            visible: true
-        },
-
-    
-    ],
-
 
 
     'bing-aerial': [
 
         {
             title: 'Census Blocks Groups', 
-            table: 'bgp_clip', 
+            table: 'bgp', 
             style: 'bing-aerial-bgp',
             visible: true
         },
 
         {
             title: 'Census Blocks Groups Labels', 
-            table: 'bgp_point_clip', 
+            table: 'bgp_label', 
             style: 'bing-aerial-bgp-label',
             visible: true
         },
 
         {
             title: 'Census Tract',
-            table: 'trx_clip',
+            table: 'trx',
             style: 'bing-aerial-trx',
             visible: false
         },
@@ -290,7 +31,7 @@ var mapConfigs = {
 
         {
             title: 'Census Tract Labels',
-            table: 'trx_point_clip',
+            table: 'trx_label',
             style: 'bing-aerial-trx-label',
             visible: false
         },
@@ -298,7 +39,7 @@ var mapConfigs = {
 
         {
             title: 'Census Place',
-            table: 'pla_clip',
+            table: 'pla',
             style: 'bing-aerial-pla',
             visible: false
         },
@@ -313,7 +54,7 @@ var mapConfigs = {
 
         {
             title: 'MCD',
-            table: 'mcd_clip',
+            table: 'mcd',
             style: 'bing-aerial-mcd',
             visible: false
         },
@@ -329,7 +70,7 @@ var mapConfigs = {
 
         {
             title: 'Combined Statistical Area',
-            table: 'csa_clip',
+            table: 'csa',
             style: 'bing-aerial-csa',
             visible: false
         },
@@ -346,7 +87,7 @@ var mapConfigs = {
 
         {
             title: 'Core Based Statistical Area',
-            table: 'cbs_clip',
+            table: 'cbs',
             style: 'bing-aerial-cbs',
             visible: false
         },
@@ -366,7 +107,7 @@ var mapConfigs = {
 
         {
             title: 'Zip Code',
-            table: 'zp5_clip',
+            table: 'zp5',
             style: 'bing-aerial-zp5',
             visible: true
         },
@@ -383,7 +124,7 @@ var mapConfigs = {
 
         {
             title: 'Three digit zip code',
-            table: 'tdz_clip',
+            table: 'tdz',
             style: 'bing-aerial-tdz',
             visible: true
         },
@@ -401,7 +142,7 @@ var mapConfigs = {
 
         {
             title: 'County',
-            table: 'cty_clip',
+            table: 'cty',
             style: 'bing-aerial-cty',
             visible: true
         },
@@ -409,7 +150,7 @@ var mapConfigs = {
 
         {
             title: 'County Label',
-            table: 'cty_point_clip',
+            table: 'cty_label',
             style: 'bing-aerial-cty-label',
             visible: true
         },
@@ -418,7 +159,7 @@ var mapConfigs = {
 
         {
             title: 'Nielsen Designated Area',
-            table: 'dma_clip',
+            table: 'dma',
             style: 'bing-aerial-dma',
             visible: false
         },
@@ -434,7 +175,7 @@ var mapConfigs = {
 
         {
             title: 'States',
-            table: 'sta_clip',
+            table: 'sta',
             style: 'bing-aerial-sta',
             visible: true
         },
@@ -448,21 +189,21 @@ var mapConfigs = {
 
         {
             title: 'Census Blocks Groups', 
-            table: 'bgp_clip', 
+            table: 'bgp', 
             style: 'bing-road-bgp',
             visible: true
         },
 
         {
             title: 'Census Blocks Groups Labels', 
-            table: 'bgp_point_clip', 
+            table: 'bgp_label', 
             style: 'bing-road-bgp-label',
             visible: true
         },
 
         {
             title: 'Census Tract',
-            table: 'trx_clip',
+            table: 'trx',
             style: 'bing-road-trx',
             visible: false
         },
@@ -470,7 +211,7 @@ var mapConfigs = {
 
         {
             title: 'Census Tract Labels',
-            table: 'trx_point_clip',
+            table: 'trx_label',
             style: 'bing-road-trx-label',
             visible: false
         },
@@ -478,7 +219,7 @@ var mapConfigs = {
 
         {
             title: 'Census Place',
-            table: 'pla_clip',
+            table: 'pla',
             style: 'bing-road-pla',
             visible: false
         },
@@ -493,7 +234,7 @@ var mapConfigs = {
 
         {
             title: 'MCD',
-            table: 'mcd_clip',
+            table: 'mcd',
             style: 'bing-road-mcd',
             visible: false
         },
@@ -512,7 +253,7 @@ var mapConfigs = {
 
         {
             title: 'Core Based Statistical Area',
-            table: 'cbs_clip',
+            table: 'cbs',
             style: 'bing-road-cbs',
             visible: false
         },
@@ -530,7 +271,7 @@ var mapConfigs = {
 
         {
             title: 'Combined Statistical Area',
-            table: 'csa_clip',
+            table: 'csa',
             style: 'bing-road-csa',
             visible: false
         },
@@ -549,7 +290,7 @@ var mapConfigs = {
 
         {
             title: 'Zip Code',
-            table: 'zp5_clip',
+            table: 'zp5',
             style: 'bing-road-zp5',
             visible: true
         },
@@ -569,7 +310,7 @@ var mapConfigs = {
 
         {
             title: 'Three digit zip code',
-            table: 'tdz_clip',
+            table: 'tdz',
             style: 'bing-road-tdz',
             visible: true
         },
@@ -588,7 +329,7 @@ var mapConfigs = {
 
         {
             title: 'County',
-            table: 'cty_clip',
+            table: 'cty',
             style: 'bing-road-cty',
             visible: true
         },
@@ -596,7 +337,7 @@ var mapConfigs = {
 
         {
             title: 'County Label',
-            table: 'cty_point_clip',
+            table: 'cty_point',
             style: 'bing-road-cty-label',
             visible: true
         },
@@ -604,7 +345,7 @@ var mapConfigs = {
 
         {
             title: 'Nielsen Designated Area',
-            table: 'dma_clip',
+            table: 'dma',
             style: 'bing-road-dma',
             visible: false
         },
@@ -620,7 +361,7 @@ var mapConfigs = {
 
         {
             title: 'States',
-            table: 'sta_clip',
+            table: 'sta',
             style: 'bing-road-sta',
             visible: true
         },
@@ -631,7 +372,7 @@ var mapConfigs = {
 };
 
 // var geoserver_url = 'http://localhost:8080/geoserver/wms';
-var geoserver_url = 'http://nielsen.dev.opengeo.org:8080/geoserver/wms';
+var geoserver_url = 'http://nielsen.dev.opengeo.org/geoserver/wms';
 
 var load_map = function(options) {
 
