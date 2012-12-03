@@ -2,11 +2,10 @@ var map;
 
 var mapConfigs = {
 
-
-
     'bing-aerial': [
 
         {
+
             title: 'Census Blocks Groups',
             table: 'bgp',
             style: 'bing-aerial-bgp',
@@ -14,6 +13,7 @@ var mapConfigs = {
         },
 
         {
+
             title: 'Census Blocks Groups Labels',
             table: 'bgp_label',
             style: 'bing-aerial-bgp-label',
@@ -364,11 +364,13 @@ var mapConfigs = {
 
 };
 
+
 var geoserver_url = 'http://localhost:8080/geoserver/wms';
 // var geoserver_url = 'http://nielsen.dev.opengeo.org:8080/geoserver/wms';
 var map;
 var load_map = function (options) {
     'use strict';
+
 
     $('#map').height($(document).height() - 130);
     $('#map').width($(document).width() - 20);
